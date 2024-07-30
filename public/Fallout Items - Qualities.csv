@@ -1,0 +1,27 @@
+Name,Effect
+Burst,"For each Effect rolled, you may spend an additional shot to hit another target within Close range of the primary target"
+Breaking,"For each Effect rolled, if the target is in cover, reduce the number of Cover Dice a piece of cover provides permantly by 1. Otherwise, reduce the damage resistance on the location struck by 1"
+Persistent,"If one or more Effects are rolled, the target suffers the weapon's damage again at the end of their next and subsequent turns, for a number of rounds equal to the number of Effects rolled. A character may spend a major action to make a test to stop Persistent damage early; the difficulty is equal to the number of Effects rolled"
+Piercing 1,Ignore 1 point of the target's damage reduction for each Effect rolled
+Radioactive,"For every Effect rolled, the target also suffers 1 point of Radiation damage"
+Spread,"For each Effect rolled, your attack inflicts one additional hit on the target. Each additional hit inflicts half the rolled damage and hits a random location"
+Stun,"If one or more Effects are rolled, the target loses their normal actions in their next turn. A stunned target may still spend AP to take additional actions"
+Vicious,The attack inflicts +1 damage for each Effect rolled
+Accurate,"If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 damage dice per AP to the attack's damage"
+Blast,"When you make an attack with a Blast weapon, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2. If you succeed, every target in that zone suffers the weapon's damage. If you fail, roll only half the weapon's to determine the damage inflicted to creatures in the target zone and ignore the weapon's normal damage effects."
+Close Quarters,You suffer no penalty for attacking when within Reach of an enemy
+Concealed,"Enemies do not spot this weapon unless you're wielding it, or thet succeed at a PER + Survival test with a difficulty of 2"
+Debilitating,The difficulty of any skill test treat to injuries inflicted by this weapon increase by +1.
+Gatling,"Ammunition is spent at ten times the normal rate. Whenever spend ammunition to increase you damage, this weapon's damage, add +2 Damage Dice per shot"
+Inaccurate,you cannot take the Aim minor action
+Mine,When a Mine is placed it inflicts its damage upon anyone who comes within Reach of it
+Night Vision,"When you Aim with a Night Vision weapon, you ignore any penalty due to darkness."
+Parry,"When an enemy attempts a melee attack against you, you may spend 1 AP to add +1 to your Defense"
+Recon,"When you Aim, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack."
+Reliable,"During each combat encounter, ignore the first complication you roll"
+Supressed,"If an enemy is not aware of you when you attack, they do not notice the attack unless they are the target or they pass a PER+ Survival test with a difficulty of 2."
+Thrown,This can be thrown
+Two-Handed,Attacking with only one hand increases the difficulty by +2.
+Unreliable,Increase the complication range of attacks by 1.
+Re-roll Hit Location,You may choose to re-roll your hit-location die
+Bayonet,You may make a Melee Weapon with 4 Physical Damage Dice and Piercing 1

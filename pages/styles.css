@@ -1,0 +1,298 @@
+
+@media print {
+  .card  {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+.card-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Monofonto";
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 1em;
+  padding: 20px;
+  width: 5in;
+  height: 8in;
+  overflow: hidden;    
+  break-inside: avoid;
+  --card-color: black;
+  background: url(../public/images/backdrop.jpeg);
+  z-index: -2;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  mix-blend-mode: multiply;
+  padding: 10px;
+  bottom: 0;
+  top: 0;
+  left:0;
+  right:0;
+}
+
+.card .overlay{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  background: url(../public/images/grunge.jpeg);
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: screen;
+}
+
+.card:before {
+  border-radius: 20px;
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 9px solid var(--card-color);
+  background: white;
+}
+
+.card:after {
+  content: " ";
+  z-index: -2;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: white;
+}
+
+.card-wrapper.small-guns{
+  --card-color: darkgreen;
+}
+.card-wrapper.big-guns{
+  --card-color: darkred;
+}
+.card-wrapper.energy-weapon{
+  --card-color: #007070;
+}
+.card-wrapper.melee-weapon{
+  --card-color: rgb(145, 88, 20);
+}
+.card-wrapper.unarmed, .card.throwing{
+  --card-color: rgb(122, 120, 120);
+}
+.card-wrapper.explosive{
+  --card-color: rgb(190, 30, 30);
+}
+
+
+.card-wrapper.loading {
+  opacity: 0.2;
+}
+
+.card-wrapper.small {
+  font-size: 90%;
+}
+
+.card-wrapper.small-flavour .flavour {
+  font-size: 70%;
+}
+.card-wrapper.tiny {
+  font-size: 80%;
+}
+.card-wrapper.no-flavour .flavour {
+  display: none;
+}
+
+.title_bar {
+  border-radius: 9px 9px 0px 0px;
+  box-sizing: border-box;
+  background-color: var(--card-color);
+  color: white;
+  min-height: 130px;
+  margin: 10px;
+  padding: 0.7em 0.4em 0em 1em;
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-size: 200%;
+  font-family: "Overseer";
+  flex-grow: 1;
+}
+
+.title .prefix{
+  display: block;
+}
+
+.title .sub_title, .title .prefix{
+  font-family: "Monofonto";
+  font-size: 50%;
+  margin-bottom: 0.5em;
+}
+.ammo {
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.stat_bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stat_bar.misc {
+  margin-bottom: 0.5em;
+}
+
+.stat_bar > * {
+  text-align: center;
+  flex: 1 1 0px;
+  padding: 0 1em;
+  white-space: nowrap;
+}
+.stat_bar .stat {
+  font-size: 180%;
+  padding: 0.1em;
+}
+.stat_bar .sub_stat {
+  font-size: 80%;
+  margin-top: -0.4em;
+  padding: 0.1em;
+}
+
+.image, .icon{
+  position: relative;
+}
+
+
+.image::before, .icon::before  {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  z-index: -1;
+  background-color: white;
+  filter: revert;
+}
+
+.card-wrapper:not(.medium-font) .rules{
+  font-size: 130%;
+}
+.card-wrapper:not(.medium-font) .flavour {
+  font-size: 100%;
+}
+
+.card > .image {
+  min-height: 1in;
+  flex-grow: 1;
+  margin: 1em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-wrapper > .wrapped-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(0);
+}
+
+.image-wrapper > .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--card-color);
+  mix-blend-mode: overlay;
+}
+
+.icon .rules{
+  flex-grow: 1;
+}
+.flavour,
+.rules {
+  margin: 0 1em;
+  text-align: justify;
+}
+.flavour {
+  font-family: "Mon's Typewriter";
+  margin: 1em 1em 1em 1em;
+  padding-bottom: 1.5em;
+  transform: rotate(-2deg);
+  transform-origin: bottom left;
+  font-size: 90%;
+  color:  var(--card-color);
+}
+
+.rules b {
+  font-size: 120%;
+}
+.rules .rule {
+  padding: 0.5em 0em;
+}
+.card-wrapper.use-icon .image {
+  display: none;
+}
+
+.card-wrapper:not(.use-icon)  .rules  .icon,
+.card-wrapper.no-icon  .rules >.icon {
+  display: none;
+}
+
+.use-icon .rules{
+  flex-grow: 1;
+}
+
+.rules > .icon {
+  width: 14em;
+  height: 8em;
+  float: left;
+  margin-right: 1em;
+}
+.card-wrapper.tiny-icon .rules .icon {
+  width: 7em;
+  height: 6em;
+}
+.card-wrapper.small-rules  .rules {
+  font-size: 90%;
+}
+
+.rules span {
+  font-family: "Be Vietnam Pro";
+}
+
+@font-face {
+  font-family: "Overseer";
+  src: url(../public/Overseer.otf) format("opentype");
+}
+@font-face {
+  font-family: "Monofonto";
+  src: url(../public//monofonto.otf) format("opentype");
+}
+@font-face {
+  font-family: "Mon's Typewriter";
+  src: url(../public//MomsTyperwriter.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Be Vietnam Pro";
+  src: url(../public//BeVietnamPro-Regular.ttf) format("truetype");
+}

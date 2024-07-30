@@ -1,0 +1,106 @@
+[
+  {
+    "Name": "Burst",
+    "Effect": "For each Effect rolled, you may spend an additional shot to hit another target within Close range of the primary target"
+  },
+  {
+    "Name": "Breaking",
+    "Effect": "For each Effect rolled, if the target is in cover, reduce the number of Cover Dice a piece of cover provides permantly by 1. Otherwise, reduce the damage resistance on the location struck by 1"
+  },
+  {
+    "Name": "Persistent",
+    "Effect": "If one or more Effects are rolled, the target suffers the weapon's damage again at the end of their next and subsequent turns, for a number of rounds equal to the number of Effects rolled. A character may spend a major action to make a test to stop Persistent damage early; the difficulty is equal to the number of Effects rolled"
+  },
+  {
+    "Name": "Piercing 1",
+    "Effect": "Ignore 1 point of the target's damage reduction for each Effect rolled"
+  },
+  {
+    "Name": "Radioactive",
+    "Effect": "For every Effect rolled, the target also suffers 1 point of Radiation damage"
+  },
+  {
+    "Name": "Spread",
+    "Effect": "For each Effect rolled, your attack inflicts one additional hit on the target. Each additional hit inflicts half the rolled damage and hits a random location"
+  },
+  {
+    "Name": "Stun",
+    "Effect": "If one or more Effects are rolled, the target loses their normal actions in their next turn. A stunned target may still spend AP to take additional actions"
+  },
+  {
+    "Name": "Vicious",
+    "Effect": "The attack inflicts +1 damage for each Effect rolled"
+  },
+  {
+    "Name": "Accurate",
+    "Effect": "If you take the Aim minor action before attacking with an Accurate weapon, you may spend up to 3 AP to add +1 damage dice per AP to the attack's damage"
+  },
+  {
+    "Name": "Blast",
+    "Effect": "When you make an attack with a Blast weapon, select a single zone you can see, and make the appropriate skill test to attack, with a basic difficulty of 2. If you succeed, every target in that zone suffers the weapon's damage. If you fail, roll only half the weapon's to determine the damage inflicted to creatures in the target zone and ignore the weapon's normal damage effects."
+  },
+  {
+    "Name": "Close Quarters",
+    "Effect": "You suffer no penalty for attacking when within Reach of an enemy"
+  },
+  {
+    "Name": "Concealed",
+    "Effect": "Enemies do not spot this weapon unless you're wielding it, or thet succeed at a PER + Survival test with a difficulty of 2"
+  },
+  {
+    "Name": "Debilitating",
+    "Effect": "The difficulty of any skill test treat to injuries inflicted by this weapon increase by +1."
+  },
+  {
+    "Name": "Gatling",
+    "Effect": "Ammunition is spent at ten times the normal rate. Whenever spend ammunition to increase you damage, this weapon's damage, add +2 Damage Dice per shot"
+  },
+  {
+    "Name": "Inaccurate",
+    "Effect": "you cannot take the Aim minor action"
+  },
+  {
+    "Name": "Mine",
+    "Effect": "When a Mine is placed it inflicts its damage upon anyone who comes within Reach of it"
+  },
+  {
+    "Name": "Night Vision",
+    "Effect": "When you Aim with a Night Vision weapon, you ignore any penalty due to darkness."
+  },
+  {
+    "Name": "Parry",
+    "Effect": "When an enemy attempts a melee attack against you, you may spend 1 AP to add +1 to your Defense"
+  },
+  {
+    "Name": "Recon",
+    "Effect": "When you Aim, you may mark the target you aimed at. The next ally to attack that target may re-roll one d20 on their attack."
+  },
+  {
+    "Name": "Reliable",
+    "Effect": "During each combat encounter, ignore the first complication you roll"
+  },
+  {
+    "Name": "Supressed",
+    "Effect": "If an enemy is not aware of you when you attack, they do not notice the attack unless they are the target or they pass a PER+ Survival test with a difficulty of 2."
+  },
+  {
+    "Name": "Thrown",
+    "Effect": "This can be thrown"
+  },
+  {
+    "Name": "Two-Handed",
+    "Effect": "Attacking with only one hand increases the difficulty by +2."
+  },
+  {
+    "Name": "Unreliable",
+    "Effect": "Increase the complication range of attacks by 1."
+  },
+  {
+    "Name": "Re-roll Hit Location",
+    "Effect": "You may choose to re-roll your hit-location die"
+  },
+  {
+    "Name": "Bayonet",
+    "Effect": "You may make a Melee Weapon with 4 Physical Damage Dice and Piercing 1"
+  }
+]
